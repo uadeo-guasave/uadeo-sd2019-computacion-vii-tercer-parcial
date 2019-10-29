@@ -1,0 +1,16 @@
+$ cd /c/xampp/mysql/bin
+$ ./mysql -uroot
+mysql> create database uadeo_library;
+mysql> create user 'admin_library'@'localhost' identified by '123';
+mysql> grant all on uadeo_library.* to 'admin_library'@'localhost';
+mysql> exit
+Bye
+
+$ ./mysql -uadmin_library -p
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| uadeo_library      |
++--------------------+
