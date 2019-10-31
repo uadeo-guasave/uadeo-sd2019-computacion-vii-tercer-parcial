@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -25,6 +26,9 @@ namespace Tercer_Parcial.Models
 
         [NotMapped]
         public Cliente Cliente { get; set; }
+
+        [NotMapped]
+        public List<PrestamoLibro> PrestamosLibros { get; set; }
 
     }
 }
