@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace Tercer_Parcial.Models
 {
@@ -33,6 +34,9 @@ namespace Tercer_Parcial.Models
 
         [NotMapped]
         public Rol Rol { get; set; }
+
+        [NotMapped]
+        public List<Jornada> Jornadas { get; set; }
     }
 
     public enum Estado

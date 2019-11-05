@@ -123,6 +123,7 @@ namespace Tercer_Parcial.Models
                 jornada.Property(j => j.UsuarioId).HasColumnName("usuario_id");
 
                 jornada.HasMany(j => j.Prestamos).WithOne(p => p.Jornada);
+                jornada.HasOne(j => j.Usuario).WithMany(u => u.Jornadas);
             });
 
             modelBuilder.Entity<Prestamo>(prestamo =>

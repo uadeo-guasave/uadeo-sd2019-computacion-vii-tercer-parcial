@@ -21,5 +21,8 @@ namespace Tercer_Parcial.Models
 
         [NotMapped]
         public List<Prestamo> Prestamos { get; set; }
+
+        [NotMapped]
+        public Usuario Usuario { get; set; }
     }
 }
