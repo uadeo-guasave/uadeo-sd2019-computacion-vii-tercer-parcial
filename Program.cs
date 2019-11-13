@@ -14,10 +14,10 @@ namespace Tercer_Parcial
     {
         public static void Main(string[] args)
         {
-            using (var db = new Models.MysqlDbContext())
-            {
-                db.Database.EnsureCreated();
-            }
+            // using (var db = new Models.MysqlDbContext())
+            // {
+            //     db.Database.EnsureCreated();
+            // }
             CreateWebHostBuilder(args).Build().Run();
         }
 
